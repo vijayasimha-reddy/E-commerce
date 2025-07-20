@@ -1,4 +1,12 @@
-/* Big Discount Card Styles */
+.plus-circle-hover {
+  transition: color 0.2s;
+  border-radius: 50%;
+  padding: 6px;
+}
+.plus-circle-hover:hover {
+  background: #111;
+  color: #fff !important;
+}
 .discount-card {
   position: relative;
   transition: box-shadow 0.2s;
