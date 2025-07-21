@@ -9,21 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <header class="container-fluid py-3 px-2 px-md-4 bg-white border-bottom">
-      <div class="row align-items-center">
-        <div class="col-6 col-md-3 d-flex align-items-center">
-          <img src="Images/achieversIT.png" alt="no image" class="img-fluid" style="max-height: 50px;">
+    <div class="header">
+        <div class="img-ach">
+            <img src="Images/achieversIT.png" alt="no image">
         </div>
-        <div class="col-6 col-md-9">
-          <nav class="d-flex justify-content-end align-items-center flex-wrap gap-3">
-            <a href="home.html" class="text-decoration-none text-dark fw-semibold">Home</a>
-            <a href="shop.html" class="text-decoration-none text-dark fw-semibold">Shop</a>
-            <a href="cart.html" class="text-decoration-none text-dark fw-semibold">Cart</a>
-            <a href="cart.html" class="text-decoration-none text-dark"><i class="fa-solid fa-cart-shopping"></i></a>
-          </nav>
+        <div class="space"></div>
+        <div class="nav-pages">
+            <div class="home"><a href="home.html">Home</a></div>
+            <div class="shop"><a href="shop.html">Shop</a></div>
+            <div class="cart"><a href="cart.html">cart</a></div>
+            <div class="cart position-relative">
+                <a href="cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:0.6rem; min-width:16px; height:16px; display:flex; align-items:center; justify-content:center; border-radius:50%; padding:0; border:1.5px solid #fff;">4</span>
+                </a>
+            </div>
+            <div class="login"><i class="fa-solid fa-user"></i></div>
+    
         </div>
-      </div>
-    </header>
+    
+    </div>
     
     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner" style="background-color: #f8f9fa;">
@@ -381,7 +386,7 @@
     
     
     <div class="container-fluid my-5" style="padding-left:50px; padding-right:50px;">
-      <h2 class="text-center fw-bold mb-4" style="font-size:2.2rem; letter-spacing:1px;">New Arrivals</h2>
+      <h2 class="text-center fw-bold mb-4" style="font-size:1.3rem; letter-spacing:1px;">New Arrivals</h2>
       <div class="d-flex justify-content-center">
         <div class="row row-cols-1 row-cols-md-3 g-0" style="--bs-gutter-x: 1px; --bs-gutter-y: 1px; max-width: 1020px; width:100%;">
           <!-- Card 1 -->
@@ -649,5 +654,268 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</div>
+
+<div class="container-fluid my-5" style="padding-left:50px; padding-right:50px;">
+  <h2 class="text-center fw-bold mb-4" style="font-size:1.3rem; letter-spacing:1px;">Best Sales</h2>
+  <div class="d-flex justify-content-center">
+    <div class="row row-cols-1 row-cols-md-3 g-0" style="--bs-gutter-x: 1px; --bs-gutter-y: 1px; max-width: 1020px; width:100%;">
+      <!-- Card 1 -->
+      <div class="col mb-3">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/watch-03.jpg" alt="Watch 3" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 1</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 199</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col mb-3">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/phone-08.png" alt="Phone 8" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 2</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 299</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col mb-3">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/arm-chair-02.jpg" alt="Arm Chair 2" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 3</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 399</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col mb-3">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/watch-07.png" alt="Watch 7" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 4</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 249</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col mb-3">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/wireless-03.png" alt="Wireless 3" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 5</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 299</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col mb-3">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/single-sofa-04.png" alt="Sofa 4" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 6</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 349</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Row 3: Cards 7-8 as two columns centered in the main row -->
+      <div class="col-12 col-md-4 offset-md-2 d-flex justify-content-center mb-3 mb-md-0">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/watch-05.png" alt="Watch 5" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 7</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 399</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center">
+        <div class="card h-100 shadow-sm d-flex flex-column justify-content-between discount-card" style="width: 100%; max-width: 320px; margin: 0 auto; padding: 20px; border-radius:0; min-height: 350px;">
+          <div class="d-flex align-items-start mb-2 position-relative" style="min-height: 28px;">
+            <span style="visibility:hidden;">-</span>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <img src="Images/phone-06.jpg" alt="Phone 6" style="width: 170px; height: 170px; object-fit: contain;">
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <h5 class="card-title fw-bold mb-0">Best Sale 8</h5>
+          </div>
+          <div class="d-flex justify-content-start mb-2">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="fw-bold" style="font-size: 1.1rem;"><i class="fa-solid fa-dollar-sign"></i> 499</span>
+            <i class="fa-solid fa-plus text-dark plus-circle-hover" style="font-size: 1.2rem; cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer style="background: #0a2240; color: #fff; padding: 48px 0 24px 0;">
+    <div class="container">
+      <div class="row">
+        <!-- Column 1: Logo, Icon, and Lorem -->
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fw-bold" style="font-size: 1.2rem; color: #fff; letter-spacing: 1px;">Mart</span>
+            <i class="fa-solid fa-bag-shopping ms-2" style="font-size: 1.2rem; color: #fff;"></i>
+          </div>
+          <div style="color: #fff; opacity: 0.85; font-size: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.</div>
+        </div>
+        <!-- Column 2: About Us -->
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3" style="color: #fff; font-size: 1rem;">About Us</h5>
+          <ul class="list-unstyled" style="color: #fff;">
+            <li class="mb-2">Careers</li>
+            <li class="mb-2">Our Stores</li>
+            <li class="mb-2">Our Cares</li>
+            <li class="mb-2">Terms and Conditions</li>
+            <li class="mb-2">Privacy Policy</li>
+          </ul>
+        </div>
+        <!-- Column 3: 5 Rows -->
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3" style="color: #fff; font-size: 1rem;">Customer Care</h5>
+          <ul class="list-unstyled" style="color: #fff;">
+            <li class="mb-2">Help Center</li>
+            <li class="mb-2">How to Buy</li>
+            <li class="mb-2">Track Your Order</li>
+            <li class="mb-2">Corporate and Bulk Purchasing</li>
+            <li class="mb-2">Returns and Refunds</li>
+          </ul>
+        </div>
+        <!-- Column 4: Address -->
+        <div class="col-12 col-md-3">
+          <h5 class="fw-bold mb-3" style="color: #fff; font-size: 1rem;">Address</h5>
+          <address style="color: #fff; opacity: 0.85; font-size: 1rem;">
+            123 Market Street<br>
+            Downtown City<br>
+            State 456789<br>
+            Country<br>
+            Phone: (123) 456-7890
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
