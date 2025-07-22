@@ -30,9 +30,9 @@
     </div>
     <!-- Page content goes here -->
     <div class="container-fluid my-5 cart-section">
-      <div class="row cart-row">
-        <div class="col-12 col-md-6 cart-col">
-          <div class="row g-0 cart-card" style="margin-bottom:10px; padding:18px; min-height:70px;">
+      <div class="row cart-row gx-5" style="padding-left:50px; padding-right:50px;"> <!-- 50px gap on both sides -->
+        <div class="col-12 col-md-3 offset-md-9 d-flex flex-column align-items-end" style="padding-right:0;"> <!-- offset-md-9 for extreme right, top row -->
+          <div class="row g-0 cart-card" style="margin-bottom:10px; padding:18px; min-height:70px; width:100%;"> <!-- Cart summary at top right -->
             <div class="col-12 d-flex flex-column justify-content-between">
               <div class="row">
                 <div class="col-12">
@@ -52,6 +52,10 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row cart-row gx-5" style="padding-left:50px; padding-right:50px;"> <!-- 50px gap on both sides, product cards row -->
+        <div class="col-12 col-md-6 cart-col align-self-start" style="margin-top:-120px;"> <!-- maximum width for cards -->
           <div class="row g-0 cart-card" style="margin-bottom:10px; padding:24px;">
             <div class="col-3 cart-img-col">
               <img src="Images/watch-03.jpg" alt="Watch" class="cart-img">
@@ -164,6 +168,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="col-12 col-md-3 d-flex flex-column align-items-start" style="padding-left:0;">
         </div>
       </div>
     </div>
